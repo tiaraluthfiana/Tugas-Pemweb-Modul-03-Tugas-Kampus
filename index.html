@@ -5,41 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Horizontal Navbar</title>
     <style>
+      /*untuk mengatur tampilan navbar*/
       nav ul {
-        list-style-type: none;
+        list-style-type: none; /*menghilangkan bullet pada list*/
         margin: 0;
         padding: 0;
-        overflow: hidden;
-        text-transform: uppercase;
+        overflow: hidden; /*agar tidak ada scrollbar*/
+        text-transform: uppercase; /*agar huruf menjadi besar*/
         background-color: #ebebeb;
         /* border-bottom: 5px solid #ebebeb; */
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*mengatur jenis font dan font cadangan*/
       }
 
+      /*untuk mengatur gaya item navigasi*/
       nav ul li {
-        float: left;
+        float: left; /*mengatur tampilan element agar mengapung di kiri*/
       }
 
+      /*untuk mengatur tampilan link yg ada di dalam navbar*/
       nav ul li a {
-        display: block;
+        display: block; /*mengubah tautan menjadi block*/
         color: #464646;
         text-align: center;
-        padding: 16px 22px;
-        text-decoration: none;
+        padding: 16px 22px; /*memberi jarak antara konten*/
+        text-decoration: none; /*menghilangkan dekorasi link*/
         border-bottom: 5px solid #ebebeb;
       }
 
+      /*untuk mengubah warna text dan latar belakang ketika dihover*/
       nav ul li a:hover {
         color: white;
         background-color: #464646;
         border-bottom: 5px solid #41aaaa;
       }
 
+      /*untuk mengubah warna text dan latar belakang di link yg berada di dalam kelas active*/
       nav ul li a.active {
         color: white;
         background-color: #41aaaa;
       }
-
+      
+      /*untuk mengubah warna text dan latar belakang ketika link dihover dan berada di dlm kelas active*/
       nav ul li a.active:hover {
         color: white;
         background-color: #464646;
@@ -48,12 +54,13 @@
     </style>
   </head>
   <body>
-    <nav>
-      <ul>
+    <nav> <!--membuat element navigasi-->
+      <ul> <!--membuat list navigasi-->
         <li><a href="#" class="active">Home</a></li>
         <li><a href="#">Service</a></li>
         <li><a href="#">Project</a></li>
         <li><a href="#">About</a></li>
+        <!--href="#" untuk mengarahkan link ke lokasi yg sama-->
       </ul>
     </nav>
   </body>
